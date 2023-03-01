@@ -14,7 +14,7 @@ const shoppingBudget = computed(() => {
 });
 
 const disable = computed(()=>{
-  
+  shoppingBudget.value >= 5 ? true : false
 })
 </script>
 
@@ -39,7 +39,7 @@ const disable = computed(()=>{
           type="submit
       "
           @click="showForm = true"
-         
+          :disabled="disable"
         >
           Add New Item
         </button>
