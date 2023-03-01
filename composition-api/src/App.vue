@@ -5,16 +5,15 @@ const shoppingList = ref([]);
 const newItem = ref("");
 const showForm = ref(false);
 const addNewitem = () => {
-  shoppingList.value.push(newItem.value);
-  newItem.value = "";
+  // Add your code here
 };
 
 const shoppingBudget = computed(() => {
-  return shoppingList.value.filter((list)=>list.length > 0).length;
+  // Add your code here
 });
 
 const disable = computed(()=>{
-  
+  // Add your code here
 })
 </script>
 
@@ -39,7 +38,7 @@ const disable = computed(()=>{
           type="submit
       "
           @click="showForm = true"
-         
+          
         >
           Add New Item
         </button>
