@@ -14,7 +14,7 @@ const shoppingBudget = computed(() => {
 });
 
 const disable = computed(()=>{
-  shoppingBudget.value >= 5 ? true : false
+ return shoppingBudget.value >= 5 ? true : false
 })
 </script>
 
@@ -30,6 +30,7 @@ const disable = computed(()=>{
           placeholder="Add a new item"
           class="px-4 py-2 text-gray-200"
           v-model="newItem"
+          :disabled="disable"
         />
       </div>
       <div class="flex gap-2">
