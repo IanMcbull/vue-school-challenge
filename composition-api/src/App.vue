@@ -8,7 +8,7 @@ const addNewitem = () => {
   // Add your code here
 };
 
-const shoppingBudget = computed(() => {
+const numberOfItems = computed(() => {
   // Add your code here
 });
 
@@ -53,7 +53,7 @@ const disable = computed(()=>{
     </form>
     <div
       class="bg-pink-100 p-2 flex gap-2 items-center"
-      v-if="shoppingBudget > 5"
+      v-if="numberOfItems >= 5"
     >
       <i
         class="fa-sharp fa-solid fa-triangle-exclamation text-red-500 text-2xl"
