@@ -5,16 +5,15 @@ const shoppingList = ref([]);
 const newItem = ref("");
 const showForm = ref(false);
 const addNewitem = () => {
-  shoppingList.value.push(newItem.value);
-  newItem.value = "";
+  // Add your code here
 };
 
 const shoppingBudget = computed(() => {
-  return shoppingList.value.filter((list)=>list.length > 0).length;
+  // Add your code here
 });
 
 const disable = computed(()=>{
- return shoppingBudget.value >= 5 ? true : false
+ // Add our code here
 })
 </script>
 
@@ -30,17 +29,16 @@ const disable = computed(()=>{
           placeholder="Add a new item"
           class="px-4 py-2 text-gray-200"
           v-model="newItem"
-          :disabled="disable"
+          
         />
       </div>
       <div class="flex gap-2">
         <button
           :class="disable?'bg-gray-500 text-gray-400':'bg-green-500 hover:bg-green-600'"
           class="text-white font-bold mt-4"
-          type="submit
-      "
+          type="submit"
           @click="showForm = true"
-          :disabled="disable"
+          
         >
           Add New Item
         </button>
