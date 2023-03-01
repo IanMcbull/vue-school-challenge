@@ -1,11 +1,3 @@
-- [My Solution to the exercise](#my-solution-to-the-exercise)
-  - [Question 1: Add logic to the “addNewItem” function that adds a new item to the shoppingList array and updates the DOM.](#question-1-add-logic-to-the-addnewitem-function-that-adds-a-new-item-to-the-shoppinglist-array-and-updates-the-dom)
-    - [Thought Process](#thought-process)
-  - [Question 2: Implement logic for the numberOfItems computed property to keep track of the length of the shoppingList array.](#question-2-implement-logic-for-the-numberofitems-computed-property-to-keep-track-of-the-length-of-the-shoppinglist-array)
-    - [Thought Process](#thought-process-1)
-  - [Question 3: Disable the "add new item button" when the list has more than 5 items by using a computed property that returns a boolean based on the length of the list. You can use the ref property to reference the list and check its length. Then, bind the disabled attribute of the button to the computed property](#question-3-disable-the-add-new-item-button-when-the-list-has-more-than-5-items-by-using-a-computed-property-that-returns-a-boolean-based-on-the-length-of-the-list-you-can-use-the-ref-property-to-reference-the-list-and-check-its-length-then-bind-the-disabled-attribute-of-the-button-to-the-computed-property)
-    - [Thought Process](#thought-process-2)
-
 # My Solution to the exercise
 
 ## Question 1: Add logic to the “addNewItem” function that adds a new item to the shoppingList array and updates the DOM.
