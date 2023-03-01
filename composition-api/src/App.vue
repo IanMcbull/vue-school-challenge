@@ -5,16 +5,19 @@ const shoppingList = ref([]);
 const newItem = ref("");
 const showForm = ref(false);
 const addNewitem = () => {
-  shoppingList.value.push(newItem.value);
-  newItem.value = "";
+  if(newItem.value.length > 0){
+    shoppingList.value.push(newItem.value);
+    newItem.value = "";
+  }
+  
 };
 
-const shoppingBudget = computed(() => {
-  return shoppingList.value.filter((list)=>list.length > 0).length;
+const numberOfItems = computed(() => {
+  return shoppingList.value.length
 });
 
 const disable = computed(()=>{
- return shoppingBudget.value >= 5 ? true : false
+ return numberOfItems.value >= 5 ? true : false
 })
 </script>
 
@@ -55,7 +58,7 @@ const disable = computed(()=>{
     </form>
     <div
       class="bg-pink-100 p-2 flex gap-2 items-center"
-      v-if="shoppingBudget > 5"
+      v-if="numberOfItems > 5"
     >
       <i
         class="fa-sharp fa-solid fa-triangle-exclamation text-red-500 text-2xl"
